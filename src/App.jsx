@@ -32,8 +32,8 @@ function App(){
                 <Link to="/nonveg"><FontAwesomeIcon icon={faDrumstickBite}/> NonVeg-Items</Link>
                 <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/>CART-[{totalItems}]</Link>  
                 <Link to="/purchasehistory"><FontAwesomeIcon icon={faHistory}/> Purchase History</Link>
-                <Link to="/aboutus"><FontAwesomeIcon icon={faInfoCircle}/> About Us</Link>
-                <Link to="/contactus"><FontAwesomeIcon icon={faPhone}/> Contact Us</Link> 
+                <Link to="/aboutus"><FontAwesomeIcon icon={faInfoCircle}/> About-Us</Link>
+                <Link to="/contactus"><FontAwesomeIcon icon={faPhone}/> Contact-Us</Link> 
             </nav>
 
             <Routes>
