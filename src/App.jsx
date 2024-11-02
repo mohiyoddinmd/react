@@ -17,7 +17,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function App(){  
     const cartItems = useSelector((state) => state.cart);
-    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0); 
  
     return (
         <>
@@ -27,15 +27,14 @@ function App(){
 
         <BrowserRouter>
             <nav>
-                <Link to="/home"><FontAwesomeIcon icon={faHome}/> Home</Link>
+                <Link to="/home"><FontAwesomeIcon icon={faHome}/> HOME</Link>  
                 <Link to="/veg"><FontAwesomeIcon icon={faLeaf}/> Veg-Items</Link>
                 <Link to="/nonveg"><FontAwesomeIcon icon={faDrumstickBite}/> NonVeg-Items</Link>
-                <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/>Cart-[{totalItems}]</Link>  
+                <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/>CART-[{totalItems}]</Link>  
                 <Link to="/purchasehistory"><FontAwesomeIcon icon={faHistory}/> Purchase History</Link>
                 <Link to="/aboutus"><FontAwesomeIcon icon={faInfoCircle}/> About Us</Link>
                 <Link to="/contactus"><FontAwesomeIcon icon={faPhone}/> Contact Us</Link> 
             </nav>
-
 
             <Routes>
                 <Route path="/home" element={<Home />} />
@@ -47,8 +46,7 @@ function App(){
                 <Route path="/contactus" element={<ContactUs />} />
             </Routes>
         </BrowserRouter>
-       </>
-        
+       </>       
     );
 };
 
